@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+}
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+h1 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+  color: transparent;
+  text-shadow: 0 0 4px white;
+}
+h5 {
+  position: absolute;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaa;
+}
+.messBox {
+  display: none;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.reset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  margin: 0;
+  padding: 20px 50px;
+  color: black;
+}
+button {
+  padding: 15px;
+  color: black;
+  background-color: rgb(146, 146, 146);
+}
+button:hover {
+  background-color: rgb(182, 182, 182);
+  border: 1px solid rgb(59, 59, 196);
+}
