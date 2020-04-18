@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aldrich|Orbitron&display=swap");
+:root {
+  --ac: tomato;
+  --equ: lightblue;
+  --ope: lightgray;
+  --num: gray;
+  --input: white;
+  --result: coral;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-family: "Aldrich", san-serif;
+}
+body {
+  background-color: #c0c0c0;
+}
+.container {
+  padding: 0.15rem;
+  background-color: black;
+  width: 16rem;
+  height: 20rem;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-rows: 1.5fr 5fr;
+  grid-gap: 0.1rem;
+}
+.result-container {
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+}
+.input {
+  font-size: 0.8rem;
+  color: var(--input);
+}
+.ans {
+  font-size: 1.2rem;
+  color: var(--result);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0.1rem;
+}
+.item {
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--num);
+  border: none;
+}
+.item:hover {
+  border: 1px solid white;
+  color: white;
+}
+.ac {
+  grid-area: 1/1/2/3;
+  background-color: var(--ac);
+}
+.equ {
+  grid-area: 4/4/6/5;
+  background-color: var(--equ);
+}
+.no0 {
+  grid-area: 5/1/6/3;
+}
+.opeColor {
+  background-color: var(--ope);
+}
